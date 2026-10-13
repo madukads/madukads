@@ -62,17 +62,20 @@ Partículas, shaders e física rodando no cartão de cada pessoa. [Veja em movim
 ### 🧭 Por dentro
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#130c22','primaryTextColor':'#ece6f6','primaryBorderColor':'#8b5cf6','lineColor':'#a78bfa','fontFamily':'Georgia, serif','edgeLabelBackground':'#08050f'}}}%%
 flowchart LR
-  W["🖥️ App de Windows<br/>Electron · React<br/>Rust · C++"]
-  A["📱 App Android<br/>Expo · React Native"]
-  S["⚙️ Servidor<br/>Node · Express · Caddy"]
-  L["🔊 LiveKit<br/>SFU de voz e vídeo"]
-  I["🎮 Integrações<br/>Riot · Steam · FACEIT<br/>Allstar · Spotify"]
-  W & A -->|HTTPS + WebSocket| S
-  W & A <-->|WebRTC por UDP| L
+  W["App de Windows<br/>Electron · React<br/>Rust · C++"]
+  A["App Android<br/>Expo · React Native"]
+  S["Servidor<br/>Node · Express · Caddy"]
+  L["LiveKit<br/>SFU de voz e vídeo"]
+  I["Integrações<br/>Riot · Steam · FACEIT<br/>Allstar · Spotify"]
+  W -->|HTTPS + WebSocket| S
+  A -->|HTTPS + WebSocket| S
+  W <-->|WebRTC por UDP| L
+  A <-->|WebRTC por UDP| L
   S -->|passe da sala| L
   S --> I
+  classDef no fill:#130c22,stroke:#8b5cf6,color:#ece6f6
+  class W,A,S,L,I no
 ```
 
 <div align="center">
