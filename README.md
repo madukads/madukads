@@ -121,10 +121,9 @@ const marcos = {
 ## 📈 GitHub
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=madukads&show_icons=true&count_private=true&hide_border=true&bg_color=0b0614&title_color=a78bfa&icon_color=8b5cf6&text_color=ddd6fe" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=madukads&layout=compact&hide_border=true&bg_color=0b0614&title_color=a78bfa&text_color=ddd6fe" />
-  <br/>
-  <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=madukads&bg_color=0b0614&color=a78bfa&line=8b5cf6&point=ede9fe&area=true&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=madukads&hide_border=true&background=0b0614&ring=8b5cf6&fire=a78bfa&currStreakNum=ede9fe&sideNums=ede9fe&currStreakLabel=a78bfa&sideLabels=a78bfa&dates=8b7fb0&stroke=3b1a6e&locale=pt_BR" />
+  <br/><br/>
+  <img width="92%" src="https://ghchart.rshah.org/8b5cf6/madukads" alt="contribuições" />
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:8b5cf6,50:3b1a6e,100:0b0614" width="100%" />
