@@ -61,22 +61,7 @@ Partículas, shaders e física rodando no cartão de cada pessoa. [Veja em movim
 
 ### 🧭 Por dentro
 
-```mermaid
-flowchart LR
-  W["App de Windows<br/>Electron · React<br/>Rust · C++"]
-  A["App Android<br/>Expo · React Native"]
-  S["Servidor<br/>Node · Express · Caddy"]
-  L["LiveKit<br/>SFU de voz e vídeo"]
-  I["Integrações<br/>Riot · Steam · FACEIT<br/>Allstar · Spotify"]
-  W -->|HTTPS + WebSocket| S
-  A -->|HTTPS + WebSocket| S
-  W <-->|WebRTC por UDP| L
-  A <-->|WebRTC por UDP| L
-  S -->|passe da sala| L
-  S --> I
-  classDef no fill:#130c22,stroke:#8b5cf6,color:#ece6f6
-  class W,A,S,L,I no
-```
+<img src="assets/arquitetura.svg" alt="Diagrama: os apps falam com o servidor por HTTPS e WebSocket e com o LiveKit por WebRTC; o servidor emite o passe da sala e consulta as integrações" width="100%" />
 
 <div align="center">
 
